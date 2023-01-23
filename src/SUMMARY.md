@@ -8,4 +8,5 @@
     - [Data Blocks](./data-blocks.md)
     - [Requirements](./requirements.md)
     - [Provisioners](./provisioners.md)
+- [Custom Chips](./families.md)
 - [Planned Features](./planned-features.md)
