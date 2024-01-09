@@ -80,3 +80,30 @@ future steps of the provisioning process (i.e. manufacturing test scripts, provi
 Data blocks can optionally be written into device flash as part of the programming procedure. This
 enables powerful functionality, such as the ability to automate device-specific calibration
 parameters to achieve necessary accuracy and tolerance parameters for your product.
+
+#### Uploading Block Data during Provisioning
+
+The forged provisioner supports reading block data from the device during provisioning time using
+the RTT (Real-Time Transfer) protocol. This can be useful, for example, when performing self-test
+measurements on the device for manufacturing or extracting device-specific serial numbers or keys.
+
+If RTT is configured on a device, the provisioner UI will monitor RTT output for 1 second to acquire
+blocks (the 1 second timer resets whenever a block is encountered).
+
+Data is extracted from the device RTT output using a basic raw text transfer format, making it
+easily interoperable with printf-like functions over RTT.
+
+The format of block uploads via RTT is as follows:
+```
+forged>{block-name}:{block-value}\n
+```
+
+Below is an example of uploading a device-specific MAC address for the `mac-address` data block:
+```
+forged>mac-address:41-56-21-3f-ff-fa\n
+```
+
+The string `41-56-21-3f-ff-fa` is then associated with the `mac-address` datablock for this device.
+
+Uploading blocks via RTT is supported for all scalar data types, including strings, integers, and
+floating point numbers.
