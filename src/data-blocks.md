@@ -95,12 +95,12 @@ easily interoperable with printf-like functions over RTT.
 
 The format of block uploads via RTT is as follows:
 ```
-forged>{block-name}={block-value}\n
+forged>{block-name}:{block-value}\n
 ```
 
 Below is an example of uploading a device-specific MAC address for the `mac-address` data block:
 ```
-forged>mac-address=41-56-21-3f-ff-fa\n
+forged>mac-address:41-56-21-3f-ff-fa\n
 ```
 
 The string `41-56-21-3f-ff-fa` is then associated with the `mac-address` datablock for this device.
