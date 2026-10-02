@@ -20,8 +20,9 @@ There are two primary options for controlling the provisioner:
 
 ### Provisioner UI
 
-The provisioner UI is downloadable via the `Releases` tab on the left of the forged.dev UI after you
-log in. It will guide you through the installation and setup process.
+The provisioner UI is downloadable from the [Releases](https://forged.dev/releases) page of the
+forged.dev website. No login is required. It will guide you through the installation and setup
+process.
 
 The provisioner UI is a tool released by forged.dev to provide a user-friendly, automated interface
 with forged.dev. The UI:

@@ -2,6 +2,9 @@
 
 Forged supports custom chip specifications if you have a chip that is not supported out-of-the-box.
 
+Alternatively, chips that are not supported can be programmed using a
+[custom programming command](./programming.md#custom-programming-commands).
+
 ## Description Generation
 [`target-gen`](https://crates.io/crates/target-gen) can be used to automatically generate
 specification files for ingestion into forged.dev (and `probe-rs`) from ARM CMSIS packs quickly.

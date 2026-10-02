@@ -107,3 +107,8 @@ The string `41-56-21-3f-ff-fa` is then associated with the `mac-address` datablo
 
 Uploading blocks via RTT is supported for all scalar data types, including strings, integers, and
 floating point numbers.
+
+##### Uploading Blocks from Commands
+
+The same `forged>{block-name}:{block-value}` format may be printed to standard output by custom
+commands. These lines are uploaded as data blocks in the same manner as RTT output.
