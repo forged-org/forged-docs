@@ -63,7 +63,7 @@ internet with forged.dev, and is responsible for:
 
 Forged.dev provides an out-of-the-box provisioner user interface for all major operating systems
 that enables you to quickly get a provisioner set up. You can install the provisioner utility from
-the "Releases" tab of the forged.dev website.
+the [Releases](https://forged.dev/releases) page of the forged.dev website.
 
 If your project has more complex requirements that the provided provisioner utility cannot support,
 you can create your own provisioner tools using the forged.dev API clients. Forged currently
